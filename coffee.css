@@ -1,0 +1,79 @@
+main {
+  background-color: #172347;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+  .coffee-card {
+    /* Doesn't work...*/
+    position: relative;
+    background-color: #038298;
+    height: 100%;
+    width: 100%;
+    margin: 1em;
+    border: 2px solid black;
+  }
+}
+
+.coffee-card {
+  position: relative;
+  background-color: #038298;
+  height: 30%;
+  width: 25%;
+  margin: 1em;
+  border: 2px solid black;
+}
+
+.coffee-card .coffee-img {
+  position: relative;
+  top: 0;
+  max-width: 100%;
+  z-index: 0;
+}
+
+.coffee-card .coffee-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding: 50% 0.2em;
+  display: none;
+  z-index: 1;
+}
+
+.coffee-card:hover .coffee-details {
+  display: block;
+  background-color: #172347a2;
+}
+
+.coffee-card:hover .coffee-details .info {
+  width: 100%;
+  height: 100%;
+}
+
+/*****************************************************************************/
+.footer-trans {
+  height: 20vh;
+  margin-top: -10%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#172347), to(#015268));
+  background: linear-gradient(#172347, #015268);
+}
+
+.footer-hr {
+  margin: 0 auto;
+  margin-bottom: 1em;
+  width: 75%;
+  border: 2px solid #172347;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=coffee.css.map */
