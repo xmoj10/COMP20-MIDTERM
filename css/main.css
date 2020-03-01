@@ -56,11 +56,11 @@ nav {
 }
 
 .nav-links .current {
-  color: rgb(253, 210, 15);
+  color: #04E2B7;
 }
 
 .nav-links .current:hover {
-  color: rgb(253, 210, 15);
+  color: #04E2B7;
 }
 
 label {
