@@ -1,0 +1,418 @@
+*{
+	margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+	background-color:#172347;
+	color:white;
+}
+
+.formback {
+	width:500px;
+	height:380px;
+	background-color:#025385;
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+form {
+	padding-left: 10px;
+	padding-bottom: 40px;
+	margin-bottom: 80px;
+	width: 500px;
+}
+
+hr.event-divider{
+	border-style:dashed;
+	border-width: 2px;
+	margin-left:40px;
+	margin-right:40px;
+	margin-bottom: 15px;
+}
+
+p.day{
+	text-align:center;
+	font-size: 30px;
+	font-weight:bold;
+}
+
+.event {
+	width: 100%;
+	min-height: 300px;
+	padding: 20px;
+	margin-bottom: 40px;
+	text-align:center;
+}
+
+.date {
+	height: 100px;
+	width: 100px;
+	margin: 0, auto, 20px, auto;
+	display: inline-block;
+	background-color:#04E2B7;
+	color:black;
+}
+
+.details {
+	height: 100px;
+	width: 65%;
+	margin-top: 50px;
+	margin-bottom: 40px;
+	margin: auto;
+	text-align:left;
+	padding: 30px;
+	min-height: 40px;
+}
+
+@media screen and (max-width:800px){
+	.event {
+		height: 300px;
+	}
+}
+
+@media screen and (max-width:550px){
+	.event {
+		height: 400px;
+	}
+}
+
+nav {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-height: 8vh;
+  background-color: #172346;
+  z-index: 999;
+}
+
+.logo {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 125%;
+}
+
+.hamburger {
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+  color: rgb(226, 226, 226);
+}
+
+.nav-links {
+  margin: 0 30px 0 0;
+  font-weight: bold;
+  width: 100%;
+}
+
+.nav-links a {
+  clear: right;
+  margin: 0 20px;
+  line-height: 70px;
+  transition: 0.35s ease-in;
+}
+
+.nav-links a:hover {
+  background-color: #687691;
+  color: rgb(0, 0, 0);
+}
+
+.nav-links .current {
+  color: rgb(253, 210, 15);
+}
+
+.nav-links .current:hover {
+  color: rgb(253, 210, 15);
+}
+
+label {
+  margin: 0 40px 0 0;
+  font-size: 162.5%;
+  line-height: 70px;
+  display: none;
+  float: right;
+}
+
+#toggle {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    text-align: center;
+    background-color: #687691;
+    width: 100%;
+    display: none;
+  }
+
+  .nav-links a:first-child {
+    border-top: 1px solid white;
+
+  }
+
+  .nav-links a {
+    display: block;
+    border-bottom: 1px solid white;
+    margin: 0px;
+
+  }
+
+  #toggle:checked + .nav-links {
+    display: block;
+  }
+}
+
+
+footer {
+    background-color: #172346;
+    padding: 50px 0;
+  }
+
+  .footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+  }
+
+  .logo-footer {
+    width: 250px;
+  }
+
+  .social-media {
+    margin: 5px 8px;;
+  }
+
+  .social-media a {
+    margin-right: 30px;
+    font-size: 20px;
+    transition: 0.35s ease-in;
+  }
+
+  .social-media a:hover {
+    color: black;
+  }
+
+  .copyright {
+    color: rgb(226, 226, 226);
+    padding: 20px 0px 0px 7px;
+  }
+
+  .footer-right h1 {
+    margin-top: 30px;
+    color: rgb(226, 226, 226);
+    font-size: 30px;
+  }
+
+  .nav-links {
+    text-align: center;
+    background-color: #687691;
+    width: 100%;
+    display: none;
+  }
+
+  .nav-links a:first-child {
+    border-top: 1px solid white;
+
+  }
+
+  .nav-links a {
+    display: block;
+    border-bottom: 1px solid white;
+    margin: 0px;
+
+  }
+
+  #toggle:checked + .nav-links {
+    display: block;
+  }
+
+
+
+footer {
+  background-color: #172346;
+  padding: 50px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+.logo-footer {
+  width: 250px;
+}
+
+.social-media {
+  margin: 5px 8px;;
+}
+
+.social-media a {
+  margin-right: 30px;
+  font-size: 20px;
+  transition: 0.35s ease-in;
+}
+
+.social-media a:hover {
+  color: black;
+}
+
+.copyright {
+  color: rgb(226, 226, 226);
+  padding: 20px 0px 0px 7px;
+}
+
+.footer-right h1 {
+  margin-top: 30px;
+  color: rgb(226, 226, 226);
+  font-size: 30px;
+}
+
+.footer-right p {
+  color: rgb(226, 226, 226);
+  padding-bottom: 20px;
+}
+
+.border {
+  margin: 0px 0 20px 0;
+  width: 212px;
+  height: 2px;
+  background: white;
+}
+
+.notif-form {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.text {
+  flex: 1;
+  padding: 15px 40px;
+  font-size: 16px;
+  color: #687691;
+  background: #ddd;
+  font-weight: 900;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  min-width: 150px;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 15px 40px;
+  font-size: 16px;
+  color: #687691;
+  background: #ddd;
+  font-weight: 900;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  margin-left: 20px;
+  transition: opacity 0.35s ease-in;
+}
+
+.btn:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width:1000px) {
+  .footer-container {
+    max-width: 600px;
+  }
+
+  .footer-right {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .footer-left {
+    width: 100%;
+    text-align: center;
+  }
+}
+.center {
+	text-align: center;
+}
+.formbox {
+	padding-left: 10%;
+
+}
+#headingcareer{
+	padding-top: 5%;
+	padding-left: 5%;
+}
+
+#careerbig{
+	font-size: 50pt;
+	color: #0EF3C5;
+}
+#desctxt{
+	padding-left: 20%;
+	padding-right: 10%;
+	padding-bottom: 3%;
+}
+#specialhead{
+	color: #04E2B7;
+	font-size: 30pt;
+	font-style: oblique;
+	padding-left: 15%;
+	padding-right: 10%;
+	padding-bottom: 1%;
+}
+#brightblue {
+	color: #0EF3C5;
+}
+#Email {
+	width: 81%;
+}
+#Resume {
+	width: 70%;
+}
+#Relevant{
+	width: 67.2%;
+}
+#Signature{
+	width: 49.5%;
+}
+#Anything {
+	width: 40.5%;
+}
+#medblue {
+	color: #038298;
+}
+#imageside {
+	display: inline-block;
+	padding-left: 20%;
+	padding-top: 0%;
+}
+#frm1 {
+	display: inline-block;
+}
+#button {
+	font-family: 'Poppins', sans-serif;
+}
+#answer {
+	color: #0EF3C5;
+}
