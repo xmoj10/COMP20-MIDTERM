@@ -1,0 +1,365 @@
+*{
+	margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+}
+
+
+nav {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-height: 8vh;
+  background-color: #172347;
+  z-index: 999;
+}
+
+.logo {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 125%;
+}
+
+.hamburger {
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+  color: rgb(226, 226, 226);
+}
+
+.nav-links {
+  margin: 0 30px 0 0;
+  font-weight: bold;
+  width: 100%;
+}
+
+.nav-links a {
+  clear: right;
+  margin: 0 20px;
+  line-height: 70px;
+  transition: 0.35s ease-in;
+}
+
+.nav-links a:hover {
+  background-color: #172347;
+  color: rgb(0, 0, 0);
+}
+
+.nav-links .current {
+  color: rgb(253, 210, 15);
+}
+
+.nav-links .current:hover {
+  color: rgb(253, 210, 15);
+}
+
+label {
+  margin: 0 40px 0 0;
+  font-size: 162.5%;
+  line-height: 70px;
+  display: none;
+  float: right;
+}
+
+#toggle {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    text-align: center;
+    background-color: #172347;
+    width: 100%;
+    display: none;
+  }
+
+  .nav-links a:first-child {
+    border-top: 1px solid white;
+
+  }
+
+  .nav-links a {
+    display: block;
+    border-bottom: 1px solid white;
+    margin: 0px;
+    
+  }
+
+  #toggle:checked + .nav-links {
+    display: block;
+  }
+}
+
+.cover-image {
+	background: url('images/sad dog.jpg') no-repeat top center;
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+	display: flex;
+	justify-content: center;
+  align-items: center; 
+} 
+
+.cover-text {
+  text-align: center;
+  margin-top: 5px;
+  color: rgb(226, 226, 226);
+}
+
+.cover-text h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  line-height: 50px;
+  margin-bottom: 15px;
+  padding: 4px;
+}
+
+.cover-text h1 span {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.cover-image .donate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 300%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #172347;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.donate:hover {
+  color: #04E2B7;
+}
+
+.donate-heading {
+  padding: 1em 0 1em 0;
+  font-size: 40px;
+  color: black;
+  text-align: center;
+}
+
+.donate-heading:after {
+  width: 120px;
+  text-align: center;
+  margin: auto;
+}
+
+.donate-heading:after {
+    content: '';
+    display: block;
+    height: 2px;
+    border-bottom: 5px solid #025385;
+    padding-top: 10px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px 1em 4px;
+  background-color: rgb(226, 221, 221);
+}
+
+.row h2{
+  text-align: center;
+  color: #025385;
+}
+
+.row p {
+  text-align: center;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  height: 200px;
+}
+
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px 25px 4px;
+}
+
+.charity {
+  flex: 33.3333%;
+  max-width: 33.3333%;
+  padding: 0 8.5em;
+}
+
+.charity img {
+  margin: 8px 0 2em 0;
+  padding-bottom: 2em;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+}
+
+@media screen and (max-width: 800px) {
+  .charity {
+    flex: 50%;
+    max-width: 50%;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .charity {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+footer {
+  background-color: #172347;
+  padding: 50px 0;
+}
+
+.footer {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+.logo-footer {
+  width: 250px;
+}
+
+.social-media {
+  margin: 5px 8px;;
+}
+
+.social-media a {
+  margin-right: 30px;
+  font-size: 20px;
+  transition: 0.35s ease-in;
+}
+
+.social-media a:hover {
+  color: black;
+}
+
+.copyright {
+  color: rgb(226, 226, 226);
+  padding: 20px 0px 0px 7px;
+}
+
+.footer-right h1 {
+  margin-top: 30px;
+  color: rgb(226, 226, 226);
+  font-size: 30px;
+}
+
+.footer-right p {
+  color: rgb(226, 226, 226);
+  padding-bottom: 20px;
+}
+
+.border {
+  margin: 0px 0 20px 0;
+  width: 212px;
+  height: 2px;
+  background: white;
+}
+
+.notif-form {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.text {
+  flex: 1;
+  padding: 15px 40px;
+  font-size: 16px;
+  color: #172347;
+  background: #ddd;
+  font-weight: 900;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  min-width: 150px;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 15px 40px;
+  font-size: 16px;
+  color: #172347;
+  background: #ddd;
+  font-weight: 900;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  margin-left: 20px;
+  transition: opacity 0.35s ease-in;
+}
+
+.btn:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width:1000px) {
+  .footer-container {
+    max-width: 600px;
+  }
+
+  .footer-right {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .footer-left {
+    width: 100%;
+    text-align: center;
+  }
+}
