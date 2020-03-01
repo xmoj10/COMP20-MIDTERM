@@ -11,6 +11,7 @@ body {
 	color:white;
 }
 
+
 .formback {
 	width:500px;
 	height:380px;
@@ -89,9 +90,12 @@ nav {
   width: 100%;
   min-height: 8vh;
   z-index: 999;
-  animation-name: toolbarblack;
-  animation-duration: 8s;	
+	background-color: #0e183d;
+	animation-name: toolbarblack;
+	animation-duration: 8s;
+	animation-iteration-count: 1;
 }
+
 @keyframes toolbarblack {
   0% {background-color:#172346;}
   100% {background-color:#0e183d;}
@@ -183,6 +187,7 @@ footer {
 	animation-name: toolbarblack;
 	animation-duration: 8s;
 	padding: 50px 0;
+	background-color: #0e183d;
   }
 
   .footer-container {
