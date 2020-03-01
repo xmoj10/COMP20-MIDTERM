@@ -52,7 +52,7 @@ nav {
 }
 
 .nav-links a:hover {
-  background-color: #687691;
+  background-color: #0e183d;
 }
 
 .nav-links .current {
@@ -83,7 +83,7 @@ label {
 
   .nav-links {
     text-align: center;
-    background-color: #687691;
+    background-color: #0e183d;
     width: 100%;
     display: none;
   }
