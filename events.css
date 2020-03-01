@@ -80,10 +80,6 @@ p.day{
 	}
 }
 
-
-
-
-
 nav {
   position: sticky;
   top: 0px;
@@ -130,15 +126,15 @@ nav {
 }
 
 .nav-links a:hover {
-  background-color: #687691;
+  background-color: #0e183d;
 }
 
 .nav-links .current {
-  color: rgb(253, 210, 15);
+  color: #04E2B7;
 }
 
 .nav-links .current:hover {
-  color: rgb(253, 210, 15);
+  color: #04E2B7;
 }
 
 label {
@@ -161,7 +157,7 @@ label {
 
   .nav-links {
     text-align: center;
-    background-color: #687691;
+    background-color: #0e183d;
     width: 100%;
     display: none;
   }
