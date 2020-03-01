@@ -88,8 +88,13 @@ nav {
   align-items: center;
   width: 100%;
   min-height: 8vh;
-  background-color: #172346;
   z-index: 999;
+  animation-name: toolbarblack;
+  animation-duration: 8s;	
+}
+@keyframes toolbarblack {
+  0% {background-color:#172346;}
+  100% {background-color:#0e183d;}
 }
 
 .logo {
@@ -175,8 +180,9 @@ label {
 
 
 footer {
-    background-color: #172346;
-    padding: 50px 0;
+	animation-name: toolbarblack;
+	animation-duration: 8s;
+	padding: 50px 0;
   }
 
   .footer-container {
