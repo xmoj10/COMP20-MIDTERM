@@ -3,11 +3,10 @@
 	padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-	
 }
 
 body {
-	background-color:black;
+	background-color:#172347;
 	color:white;
 }
 
@@ -32,6 +31,7 @@ hr.event-divider{
 	margin-left:40px;
 	margin-right:40px;
 	margin-bottom: 15px;
+	color: #025385;
 }
 
 p.day{
@@ -80,6 +80,10 @@ p.day{
 	}
 }
 
+
+
+
+
 nav {
   position: sticky;
   top: 0px;
@@ -88,8 +92,15 @@ nav {
   align-items: center;
   width: 100%;
   min-height: 8vh;
-  background-color: #172346;
+  background-color: #0e183d;
+	animation-name: toolbarblack;
+	animation-duration: 8s;
+	animation-iteration-count: 1;
   z-index: 999;
+}
+@keyframes toolbarblack {
+  0% {background-color:#172346;}
+  100% {background-color:#0e183d;}
 }
 
 .logo {
@@ -120,7 +131,6 @@ nav {
 
 .nav-links a:hover {
   background-color: #687691;
-  color: rgb(0, 0, 0);
 }
 
 .nav-links .current {
@@ -173,78 +183,11 @@ label {
   }
 }
 
-
 footer {
-    background-color: #172346;
-    padding: 50px 0;
-  }
-  
-  .footer-container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap-reverse;
-  }
-  
-  .logo-footer {
-    width: 250px;
-  }
-  
-  .social-media {
-    margin: 5px 8px;;
-  }
-  
-  .social-media a {
-    margin-right: 30px;
-    font-size: 20px;
-    transition: 0.35s ease-in;
-  }
-  
-  .social-media a:hover {
-    color: black;
-  }
-  
-  .copyright {
-    color: rgb(226, 226, 226);
-    padding: 20px 0px 0px 7px;
-  }
-  
-  .footer-right h1 {
-    margin-top: 30px;
-    color: rgb(226, 226, 226);
-    font-size: 30px;
-  }
-
-  .nav-links {
-    text-align: center;
-    background-color: #687691;
-    width: 100%;
-    display: none;
-  }
-
-  .nav-links a:first-child {
-    border-top: 1px solid white;
-
-  }
-
-  .nav-links a {
-    display: block;
-    border-bottom: 1px solid white;
-    margin: 0px;
-    
-  }
-
-  #toggle:checked + .nav-links {
-    display: block;
-  }
-
-
-
-footer {
-  background-color: #172346;
+  background-color: #0e183d;
+  animation-name: toolbarblack;
+  animation-duration: 8s;
+  animation-iteration-count: 1;
   padding: 50px 0;
 }
 
@@ -273,7 +216,7 @@ footer {
 }
 
 .social-media a:hover {
-  color: black;
+  color: #04E2B7;
 }
 
 .copyright {
