@@ -74,7 +74,7 @@ main {
 }
 
 .section .monthly-coffee .picks-img {
-  width: 100%;
+  width: 85%;
 }
 
 @media only screen and (max-device-width: 700px) {
@@ -127,6 +127,10 @@ main {
 
 .section .join-us {
   text-align: center;
+  width: 100%;
+}
+
+.section .apply-img {
   width: 100%;
 }
 /*# sourceMappingURL=index.css.map */
