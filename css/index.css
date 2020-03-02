@@ -77,13 +77,6 @@ main {
   width: 85%;
 }
 
-@media only screen and (max-device-width: 700px) {
-  .monthly-coffee {
-    width: 100%;
-    color: black;
-  }
-}
-
 .upcoming-event {
   text-align: center;
   width: 100%;
