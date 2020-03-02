@@ -284,15 +284,3 @@ footer {
 #answer {
 	color: #0EF3C5;
 }
-.map1 {
-	display: inline-block;
-}
-.gmap_canvas {
-	align-content: center;
-}
-.fixedit {
-	align-content: center;
-	padding-left: 8%;
-	padding-right: 8%;
-
-}
