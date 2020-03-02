@@ -143,11 +143,152 @@ nav {
   transform: rotate(45deg) translate(-5px,-5px);
 }
 
+.team-heading {
+  padding: 1em 0 1em 0;
+  font-size: 40px;
+  color: black;
+  text-align: center;
+}
+
+.team-heading:after {
+  width: 120px;
+  text-align: center;
+  margin: auto;
+}
+
+.team-heading:after {
+    content: '';
+    display: block;
+    height: 2px;
+    border-bottom: 5px solid #025385;
+    padding-top: 10px;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px 25px 4px;
+  background-color: #20587a;
+
+}
+
+.container {
+  padding: 1.5em 0 0 0;
+  width: 50%;
+}
+
+@media screen and (max-width: 640px){
+  .container{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .container {
+    width: 25%;
+  }
+}
 
 
+.content {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
 
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
 
+.content:hover .content-overlay{
+  opacity: 1;
+}
 
+.content-image{
+  width: 100%;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h3{
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+
+.fadeIn-top{
+  top: 20%;
+}
+
+p {
+  padding: 1em;
+  font-size: 15px;
+  color: #6b6d6f;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 20px;
+  word-wrap: break-word;
+}
+
+.apply {
+  background-color: white;
+  border: 3px solid #025385;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  cursor: pointer;
+}
+
+.apply:hover {
+  background-color: #025385;
+  color: white;
+}
 
 footer {
   background-color: #0e183d;
@@ -261,4 +402,3 @@ footer {
     text-align: center;
   }
 }
-
