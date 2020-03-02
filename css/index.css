@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  background-color: #172347;
+}
+
+.owl-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 5fr 3fr;
+      grid-template-columns: 1fr 5fr 3fr;
+  -ms-grid-rows: 1fr 1fr 1fr 2fr;
+      grid-template-rows: 1fr 1fr 1fr 2fr;
+}
+
+.owl-container .front-image {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  width: 100%;
+}
+
+.owl-container h1 {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  color: white;
+}
+
+.owl-container h1 span {
+  font-size: 12px;
+}
+
+.section {
+  border-bottom: 2px dashed blue;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+}
+
+.section h1 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.section .monthly-coffee {
+  width: 33%;
+  text-align: center;
+  color: white;
+  background-color: #25356891;
+}
+
+.section .monthly-coffee strong {
+  border-bottom: 1px solid black;
+  padding: 0 1em;
+  font-size: 2em;
+}
+
+.section .monthly-coffee .monthly-details {
+  display: inline-block;
+  width: 100%;
+}
+
+.section .monthly-coffee .picks-img {
+  width: 100%;
+}
+
+.upcoming-event {
+  text-align: center;
+  width: 100%;
+  background-color: #25356891;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.upcoming-event .date-container {
+  margin: 1em;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.upcoming-event .date-container .date {
+  background-color: #04E2B7;
+  width: 115px;
+  height: 100px;
+}
+
+.upcoming-event .rupi {
+  width: 85%;
+  margin: 1em;
+}
+
+.section h2 {
+  text-align: center;
+  width: 100%;
+}
+
+.section .join-us {
+  text-align: center;
+  width: 100%;
+}
+/*# sourceMappingURL=index.css.map */
