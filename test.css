@@ -1,0 +1,45 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #8b8bff;
+}
+
+.divider {
+  width: 100%;
+  border-bottom: 3px dashed #025385;
+  color: white;
+  padding: 1em;
+  border: 1px solid red;
+}
+
+.divider h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.divider .card-container {
+  border: 1px solid burlywood;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.divider .card-container .card {
+  background-color: grey;
+  width: 30%;
+  height: 30vw;
+  margin: 1em 0;
+}
+/*# sourceMappingURL=test.css.map */

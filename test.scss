@@ -1,0 +1,32 @@
+* {
+ box-sizing: border-box;
+ margin: 0;   
+}
+body {
+    background-color: lighten(darkblue, 50%);
+}
+.divider {
+    width: 100%;
+    border-bottom: 3px dashed #025385;
+    color: white;
+    padding: 1em;
+    border: 1px solid red;
+    h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        width: 100%;
+        text-align: center;
+    }
+    .card-container {
+        border: 1px solid burlywood;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .card {
+            background-color: grey;
+            width: 30%;
+            height: 30%;
+        }
+    }
+}
