@@ -1,14 +1,99 @@
-* {
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
+main {
   background-color: #172347;
 }
 
-main {
-  color: white;
+h1 {
+  color: #04e2b7;
+  width: 100%;
+  text-align: center;
+}
+
+/* cards */
+.card-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.card-container .card {
+  margin: 1em auto;
+  -webkit-box-shadow: 5px 5px 5px #0b1020;
+          box-shadow: 5px 5px 5px #0b1020;
+  border-radius: 5px;
+  width: 30%;
+  height: 30vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-container .card img {
+  height: 100%;
+}
+
+.card-container .card-cover {
+  position: absolute;
+  top: 0;
+  background-color: #25356891;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+
+.card-container .card-cover p {
+  font-size: 2em;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.card-container .card-cover p:nth-child(2) {
+  font-size: 1em;
+  text-align: center;
+}
+
+.card-container .card:hover .card-cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-container .card:hover img {
+  -webkit-filter: blur(3px);
+          filter: blur(3px);
+}
+
+@media only screen and (max-width: 900px) {
+  .more {
+    display: none;
+  }
+  .less {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .more {
+    display: block;
+  }
+  .less {
+    display: none;
+  }
 }
 /*# sourceMappingURL=coffee.css.map */

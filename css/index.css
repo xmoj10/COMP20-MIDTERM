@@ -154,6 +154,7 @@ h2 {
   border-bottom: 3px dashed #025385;
   color: white;
   padding: 1em;
+  margin-bottom: 1em;
 }
 
 .divider .card-container {
@@ -179,7 +180,7 @@ h2 {
 }
 
 .divider .card-container .card img {
-  width: 100%;
+  height: 100%;
 }
 
 .divider .card-container .card-cover {
