@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="events.css">
   <title>Gift Cards</title>
   <style type="text/css">
@@ -23,7 +24,7 @@
 </head>
 
 <body>
-  <nav>
+ <nav>
     <div class="logo">
       <h4><a href="index.html">Night Owl Cafe</a></h4>
     </div>
@@ -43,22 +44,21 @@
       <div class="bottom"></div>
     </div>
   </nav>
-
-  <script src="/js/nav.js"></script>
+  <script src="./js/nav.js"></script>
 
 	<div style="height:400; padding-top: 70px; margin-bottom: 40px;">
 		<h1 style="margin-top: 10px; font-size: 40px; text-align: center"> NIGHT OWL GIFT CARDS </h1>
 	</div>
 	
-	<div align="center" id="card" style="height:400px"> <form align="left" id="cardform">
-	<h1> Order A Night Owl Gift Card</h1>
-	Gift Card Amount* <br>
-		$ <input type="text" size="10" id="amount"> <br> <br>
-	Recipient Name* <br>
-		<input type="text" size="40" id="name"> <br> <br>
+	<div align="center" id="card" style="height:500px"> <form align="left" id="cardform">
+	<h1> Order A Night Owl Gift Card</h1> <br>
+	Gift Card Amount:* <br>
+		$ <input type="text" size="40" id="amount" class="text"> <br> <br>
+	Recipient Name: * <br>
+		<input type="text" size="42" id="name" class="text"> <br> <br>
 	Personalized Message: <br>
-		<textarea style="height:60px; width:250px"> </textarea> <br>
-		<button id="submitCard"> Submit </button> <br>			
+		<textarea style="height:60px; width:425px" class="text"> </textarea> <br> <br>
+		<button id="submitCard" class="btn"> Submit </button> <br>			
 	</form> </div>
 	
 	<script language="javascript">
