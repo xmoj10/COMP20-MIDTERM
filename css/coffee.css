@@ -6,6 +6,7 @@ h1 {
   color: #04e2b7;
   width: 100%;
   text-align: center;
+  font-size: 50pt;
 }
 
 /* cards */
@@ -26,7 +27,7 @@ h1 {
   -webkit-box-shadow: 5px 5px 5px #0b1020;
           box-shadow: 5px 5px 5px #0b1020;
   border-radius: 5px;
-  width: 30%;
+  width: 30vw;
   height: 30vw;
   position: relative;
   overflow: hidden;
@@ -79,21 +80,26 @@ h1 {
           filter: blur(3px);
 }
 
+.more {
+  display: none;
+}
+
 @media only screen and (max-width: 900px) {
-  .more {
-    display: none;
+  .each-card {
+    width: 85vw;
+    height: 85vw;
   }
-  .less {
-    display: block;
+  .each-card .card {
+    padding: 1em;
+    height: 100%;
+    width: 100%;
+  }
+  .card-container .card {
+    height: 85vw;
+    width: 85vw;
   }
 }
 
-@media only screen and (min-width: 900px) {
-  .more {
-    display: block;
-  }
-  .less {
-    display: none;
-  }
-}
+/*
+div card only changes stuff inside */
 /*# sourceMappingURL=coffee.css.map */
