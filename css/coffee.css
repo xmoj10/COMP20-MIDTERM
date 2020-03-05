@@ -62,6 +62,7 @@ h1 {
 }
 
 .card-container .card:hover .card-cover {
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,6 +96,10 @@ h1 {
     width: 100%;
   }
   .card-container .card {
+    height: 85vw;
+    width: 85vw;
+  }
+  .card-container .card .card-cover {
     height: 85vw;
     width: 85vw;
   }

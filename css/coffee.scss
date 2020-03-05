@@ -50,6 +50,7 @@ h1 {
     }
     .card:hover {
         .card-cover {
+            color: white;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -78,6 +79,10 @@ h1 {
         .card {
             height: 85vw;
             width: 85vw;
+            .card-cover {
+                height: 85vw;
+                width: 85vw;
+            }
         }
     }
 }
