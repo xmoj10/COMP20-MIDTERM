@@ -1,4 +1,9 @@
-.cover-image {
+body {
+	background-color:#172347;
+	color:white;
+}
+
+/* .cover-image {
 	background: url("./images/donate-cover.jpg") no-repeat top center;
 	background-size: cover;
 	width: 100%;
@@ -45,12 +50,12 @@
 
 .donate:hover {
   color: #04E2B7;
-}
+} */
 
 .donate-heading {
   padding: 1em 0 1em 0;
   font-size: 40px;
-  color: black;
+  color: #04E2B7;
   text-align: center;
 }
 
@@ -72,12 +77,11 @@
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px 1em 4px;
-  background-color: rgb(226, 221, 221);
 }
 
 .row h2{
   text-align: center;
-  color: #025385;
+  color: #04E2B7;
 }
 
 .row p {
@@ -109,6 +113,10 @@
   .column {
     flex: 100%;
     max-width: 100%;
+  }
+
+  .latest {
+    text-align: center;
   }
 }
 
