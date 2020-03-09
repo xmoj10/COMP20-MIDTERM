@@ -1,8 +1,13 @@
-main {
-  background-color: #172347;
+body {
+  position: relative;
 }
 
-h1 {
+main {
+  background-color: #172347;
+  position: relative;
+}
+
+main h1 {
   color: #04e2b7;
   width: 100%;
   text-align: center;
@@ -40,10 +45,21 @@ h1 {
 .card-container .card-cover {
   position: absolute;
   top: 0;
-  background-color: #25356891;
+  background-color: #25356869;
   height: 100%;
   width: 100%;
-  display: none;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .card-container .card-cover p {
@@ -54,6 +70,18 @@ h1 {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.card-container .card-cover p.name {
+  display: block;
+}
+
+.card-container .card-cover .more {
+  display: none;
+}
+
+.card-container .card-cover .less {
+  display: none;
 }
 
 .card-container .card-cover p:nth-child(2) {
@@ -81,30 +109,40 @@ h1 {
           filter: blur(3px);
 }
 
-.more {
+.card-container .card:hover .name {
   display: none;
 }
 
-@media only screen and (max-width: 900px) {
-  .each-card {
-    width: 85vw;
-    height: 85vw;
+.card-container .card:hover .less {
+  display: block;
+}
+
+.less {
+  display: none;
+  margin: 1em;
+}
+
+.more {
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  main > h1 {
+    font-size: 300%;
   }
-  .each-card .card {
-    padding: 1em;
+  .card-container .card {
+    height: 65vw;
+    width: 65vw;
+  }
+  .card-container .card .card-cover {
     height: 100%;
     width: 100%;
   }
-  .card-container .card {
-    height: 85vw;
-    width: 85vw;
+  .card-container .card .card-cover .more {
+    display: none;
   }
-  .card-container .card .card-cover {
-    height: 85vw;
-    width: 85vw;
+  .card-container .card .card-cover .less {
+    display: block;
   }
 }
-
-/*
-div card only changes stuff inside */
 /*# sourceMappingURL=coffee.css.map */
