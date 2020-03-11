@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="events.css">
   <title>Gift Cards</title>
   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>	
+	
 <style type="text/css">
       a {
         color: rgb(226, 226, 226);
@@ -48,7 +50,7 @@
   <script src="./js/nav.js"></script>
 
 	<div style="height:400; padding-top: 70px; margin-bottom: 40px;">
-		<h1 style="margin-top: 10px; font-size: 40px; text-align: center"> NIGHT OWL GIFT CARDS </h1>
+		<h1 id="heading" style="margin-top: 10px; font-size: 40px; text-align: center"> NIGHT OWL GIFT CARDS </h1>
 	</div>
 	
 	<div align="center" id="card" style="height:500px"> <form align="left" id="cardform">
@@ -65,6 +67,9 @@
 	<script language="javascript">
 	document.getElementById("submitCard").onclick = function() {thankYou()};
 	
+	$(document).ready(function(){
+	    $("#heading").fadeIn(10000);	
+	});
 		
 	function thankYou(){
 		
