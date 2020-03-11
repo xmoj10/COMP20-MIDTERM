@@ -9,44 +9,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
 }
-.owl-container {
-    display: grid;
-    grid-template-columns: 1fr 5fr 3fr;
-    grid-template-rows:    1fr 1fr 1fr 2fr;
 
-    .front-image {
-        grid-row: 1 / -1;
-        grid-column: 1 / -1;
-        width: 100%;
-    }
-    h1 {
-        grid-row: 2;
-        grid-column: 2;
-        color: white;
-        span {
-            font-size: 12px;
-        }
-    }
-    // // height: 100%;
-    // height: calc((0.2 * 100vh) + (0.2 * 100vw));
-    // border: 2px solid red;
-    // overflow: hidden;
-    // background-image: url("../images/owl.jpg");
-    // background-size: 120%;
-    // background-repeat: no-repeat;
-    // h1 {
-    //     border: 1px solid blue;
-    //     width: fit-content;
-    //     padding: calc((0.05 * 100vh) + (0.02 * 100vw));
-    //     // padding-left: calc((0.2 * 100vh) + (0.2 * 100vw));
-    //     color: white;
-    // //     font-size: 300%;
-    // }
-    // h2 {
-
-    //     color: white;
-    // }
-}
 .section {
     border-bottom: 3px dashed #025385;
     width: 90%;
@@ -55,7 +18,6 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     color: white;
-    // background-color: #04E2B7;
         h1 {
             width: 100%;
             text-align: center;
@@ -121,20 +83,58 @@ main {
     }
     .apply-img {
         width: 60%;
+        height: 100%;
         padding: 1em;
     }
 }
 
-h1 {
+#top-divider {
+    width: 100%;
+    color: white;
+    position: relative;
+
+    img {
+        width: 100vw;
+        height: auto;
+    }
+
+    .header {
+        position: absolute;
+        font-size: 300%;
+        text-shadow: 2px 0px rgb(84, 76, 76);
+        top: 1em;
+        left: 20%;
+    }
+    .subheader {
+        position: absolute;
+        font-size: 200%;
+        text-shadow: 2px 0px rgb(84, 76, 76);
+        top: 3.5em;
+        left: 20%;
+    }
+
+    @media screen and (max-width: 700px) {
+        .header {
+            top: 0.5em;
+        }
+        .subheader {
+            display: none;
+        }
+    }
+}
+
+main h1 {
     text-align: center;
     font-size: 2.5rem;
     width: 100%;
     text-align: center;
     color: white;
+    margin: 0 1em;
 }
-h2 {
+main h2 {
     color: white;
     text-align: center;
+    margin: 0 1em;
 }
 .divider {
     width: 90%;
@@ -142,57 +142,6 @@ h2 {
     color: white;
     padding: 1em;
     margin-bottom: 1em;
-
-    .card-container {
-        height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        .card {
-            box-shadow: 5px 5px 5px darken(#172347, 10%);
-            border-radius: 5px;
-            width: 30%;
-            height: 30vw;
-            position: relative;
-            overflow: hidden;
-            img {
-                height: 100%;
-            }
-        }
-        .card-cover {
-            position: absolute;
-            top: 0;
-            background-color: #25356891;
-            height: 100%;
-            width: 100%;
-            display: none;
-            p {
-                font-size: 2em;
-                border-radius: 10px;
-                text-align: center;
-                width: 100%;
-                height: fit-content;
-
-            }
-            p:nth-child(2) {
-                font-size: 1em;
-                text-align: center;
-            }
-        }
-        .card:hover {
-            .card-cover {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-            }
-            img {
-                filter: blur(3px);
-            }
-        }
-    }
-
-    
 }
 .divider {
     .date-container {
@@ -241,6 +190,75 @@ h2 {
         text-align: center;
         .connect-img {
             width: 50%;
+        }
+    }
+}
+
+/* cards */
+.card-container {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .card {
+        margin: 1em auto;
+        box-shadow: 5px 5px 5px darken(#172347, 10%);
+        border-radius: 5px;
+        width:  25vw;
+        height: 25vw;
+        position: relative;
+        overflow: hidden;
+        img {
+            height: 100%;
+        }
+        img:hover {
+            filter: blur(3px);
+        }
+    }
+    .card-cover {
+        position: absolute;
+        top: 0;
+        background-color: #25356891;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        p {
+            font-size: 2em;
+            border-radius: 10px;
+            text-align: center;
+            width: 100%;
+            height: fit-content;
+
+        }
+        p:nth-child(2) {
+            font-size: 1em;
+            text-align: center;
+        }
+    }
+}
+.less {
+    display: none;
+    margin: 1em;
+}
+.more {
+    display: block;
+}
+@media only screen and (max-width: 600px) {
+    main>h1 {
+        font-size: 300%;
+    }
+    .card-container {
+        .card {
+            height: 65vw;
+            width:  65vw;
+            .card-cover {
+                height: 100%;
+                width: 100%;
+            }
         }
     }
 }

@@ -1,12 +1,17 @@
-main {
-    background-color: #172347;
+body {
+    position: relative;
 }
 
-h1 {
+main {
+    background-color: #172347;
+    position: relative;
+}
+
+main h1 {
     color: #04e2b7;
     width: 100%;
     text-align: center;
-    font-size: 50pt;
+    font-size: 400%;
 }
 
 /* cards */
@@ -31,17 +36,30 @@ h1 {
     .card-cover {
         position: absolute;
         top: 0;
-        background-color: #25356891;
+        background-color: #25356869;
         height: 100%;
         width: 100%;
-        display: none;
+        color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
         p {
             font-size: 2em;
             border-radius: 10px;
             text-align: center;
             width: 100%;
             height: fit-content;
-
+        }
+        p.name {
+            display: block;
+        }
+        .more {
+            display: none;
+        }
+        .less {
+            display: none;
         }
         p:nth-child(2) {
             font-size: 1em;
@@ -55,48 +73,47 @@ h1 {
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
+            overflow-y: scroll;
         }
         img {
             filter: blur(3px);
         }
+        .name {
+            display: none;
+        }
+        .more {
+            display: block;
+        }
+        .less {
+            display: none;
+        }
     }
 }
-.more {
+.less {
     display: none;
+    margin: 1em;
 }
-@media only screen and (max-width: 900px) {
-    .each-card {
-        width: 85vw;
-        height: 85vw;
-
-        .card {
-            padding: 1em;
-            height: 100%;
-            width: 100%;
-        }
+.more {
+    display: block;
+}
+@media only screen and (max-width: 600px) {
+    main>h1 {
+        font-size: 300%;
     }
     .card-container {
         .card {
-            height: 85vw;
-            width: 85vw;
+            height: 65vw;
+            width:  65vw;
             .card-cover {
-                height: 85vw;
-                width: 85vw;
+                height: 100%;
+                width: 100%;
+                .more {
+                    display: none;
+                }
+                .less {
+                    display: block;
+                }
             }
         }
     }
 }
-// @media only screen and (min-width: 900px) {
-//     .more {
-//         display: block;
-//     }
-//     .less {
-//         display: none;
-//     }
-//     // .card {
-//     //     width:100%;
-//     // }
-// }
-
-/*
-div card only changes stuff inside */
