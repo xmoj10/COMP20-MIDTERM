@@ -3,6 +3,17 @@ body {
 	color:white;
 }
 
+.event-heading:after {
+  width: 120px;
+  text-align: center;
+	margin: auto;
+	content: '';
+  display: block;
+  height: 2px;
+  border-bottom: 5px solid #025385;
+  padding-top: 10px;
+}
+
 .formback {
 	width:500px;
 	height:380px;
